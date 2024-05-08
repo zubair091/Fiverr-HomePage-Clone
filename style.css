@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "fira Sans", sans-serif;
+}
+body{
+    background: #1b1b1d;
+}
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+header .navbar{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbar .menu .language-item a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.navbar .menu .language-item span{
+    font-size: 1.3rem;
+}
+.navbar .menu li a:hover{
+    color: #1dbf73;
+}
+.navbar .menu .join-btn a{
+     border: 1px solid #fff;
+     padding: 8px 15px;
+     border-radius: 4px;
+}
+
+.navbar .menu .join-btn a:hover{
+    color: #fff;
+    border-color: transparent;
+    background: #1dbf73;
+}
+.hero{
+    height: 100vh;
+    background-image: url("images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+.content{
+    max-width: 1280px;
+    margin: 0 auto 40px;
+    width: 100%;
+}
+.content h1{
+    color: #fff;
+    font-size: 3rem;
+    max-width: 630px;
+    line-height: 65px;
+}
+.content .search-form{
+    height: 46px;
+    display: flex;
+    max-width: 630px;
+    margin-top: 30px;
+}
+.content .search-form input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 1rem;
+    border-radius: 40px 0 0 4px;
+}
+.content .search-form button{
+    height: 100%;
+    width: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background:#1dbf73 ;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    transition: background 0.2s ease;
+}
+.content .search-form button:hover{
+    background: #19a463;
+}
+.content .popular{
+    display: flex;
+    color: #fff;
+    gap: 25px;
+    font-size: 0.875;
+    font-weight: 500;
+    margin-top: 25px;
+}
+.content .popular .tag{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+}
+.content .popular .tag a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    transform: 0.2s ease;
+
+}
+.content .popular .tag a:hover{
+    color: #000;
+    background: #fff;
+}
+.navbar #close-menu-btn{
+    color: #fff;
+    
+}
